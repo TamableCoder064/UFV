@@ -6,7 +6,7 @@ Bienvenido/a al repositorio de apuntes y ejercicios de la asignatura de Programa
 
 En este repositorio encontrarás:
 
-- `/Apuntes`: Los apuntes de la clase de Programación
+- `[/Apuntes](/Apuntes)`: Los apuntes de la clase de Programación
 - `/Ejercicios en clase`: Todos los ejercicios que realizamos en clase en la pizarra con las diferentes soluciones que se plantean
 - `/Tareas`: Los ejercicios que YO he realizado (pueden estar mal)
 
