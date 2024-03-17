@@ -8,11 +8,9 @@ En este repositorio encontrarás:
 
 - [Apuntes](/Apuntes): Los apuntes de la clase de Programación
 - [Ejercicios en clase](/Ejercicios%20en%20clase): Todos los ejercicios que realizamos en clase en la pizarra con las diferentes soluciones que se plantean
-- `/Tareas`: Los ejercicios que YO he realizado (pueden estar mal)
+- [Tareas](/Tareas): Los ejercicios que YO he realizado (pueden estar mal)
 
 ## Contacto
 
 Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con el propietario del repositorio.
 oscar.huelin@gmail.com
-
-Ejercicios en clase
