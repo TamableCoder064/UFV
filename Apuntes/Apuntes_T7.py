@@ -77,6 +77,9 @@ class NombreClase:
         print('Hola Mundo!!!')
 # self solo se usa dentro de la clase
 
+# Para acceder a un atributo:
+# objeto.nombreatributo('va a tener un valor puede ser lo que queramos; numero, texto, tupla...')
+
 # Acceder a un atributo:
 class Saludo:
     
@@ -90,3 +93,80 @@ class Saludo:
 p1 = Saludo('clase')
 p1.saludar()
 print('Atributos -> ' + p1.texto + ' ' + p1.nombre)
+
+# Para acceder a un método:
+# objeto.nombremetodo(parametro1, parametro2, parametro3... si los tuviese)
+
+# Self es la referencia interna al objeto y es OBLIGATORIO ponerlo aunque en la llamada se omite,
+# solo se tiene que poner al definir la clase,
+# no tiene por que ser 'self', puede ser la palabra que queramos. El estandar en python es self.
+class Saludo:
+    def __init__(mio, nombre):
+        mio.texto = 'Hola'
+        mio.nombre = nombre
+
+    def saludar(mio):
+        print(mio.texto)
+
+p1 = Saludo('clase')
+p1.saludar()
+
+# Modificar una propiedad:
+class Saludo:
+    def __init__(self, nombre) -> None:
+        self.texto = 'Hola'
+        self.nombre = nombre
+
+    def saludar(self):
+        print(self.texto + ' ' + self.nombre)
+
+p1 = Saludo('clase')
+p1.nombre = 'Esteban'
+p1.saludar()
+
+# Borrar una propiedad:
+class Saludo:
+    def __init__(self, nombre) -> None:
+        self.texto = 'Hola'
+        self.nombre = nombre
+
+    def saludar(self):
+        print(self.texto + ' ' + self.nombre)
+
+p1 = Saludo('clase')
+print(dir(p1))
+del p1.texto
+print(dir(p1))
+
+# Borrar el objeto entero:
+class Saludo:
+    def __init__(self, nombre) -> None:
+        self.texto = 'Hola'
+        self.nombre = nombre
+
+    def saludar(self):
+        print(self.texto + ' ' + self.nombre)
+
+p1 = Saludo('clase')
+p1.saludar()
+del p1
+p1.saludar()
+
+#Llamar a una función:
+class Saludo:
+    def __init__(self, nombre) -> None:
+        self.texto = 'Hola'
+        self.nombre = nombre
+
+    def saludar(self):
+        print(self.texto + ' ' + self.nombre)
+
+    def despedirse(self):
+        print('Adios ' + self.nombre)
+
+p1 = Saludo('clase')
+p1.saludar()
+p1.despedirse()
+
+# Atributo o métodos privados: añadir dos guiones bajos (__) al inicio para denegar el acceso a los datos.
+# Cualquier intento de acceder desde el exterior provocará AttributeError.
